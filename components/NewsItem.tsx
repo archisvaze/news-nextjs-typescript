@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const NewsItem = ({ newsItem }: any) => {
     return (
-        <article className=' rounded overflow-hidden w-80 m-2 relative bg-white dark:bg-slate-900 text-black dark:text-white'>
+        <article className=' rounded-md overflow-hidden w-80 m-2 relative bg-white dark:bg-slate-900 text-black dark:text-white'>
 
             <Image width="320px" height="200px" objectFit="cover" src={newsItem.image} alt="" />
 
