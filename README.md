@@ -1,4 +1,10 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# News App
+
+### Tech-stack: NextJS, TypeScript, TailwindCSS, NodeJS, ExpressJS, SSR
+
+- Get News Articles (from Inshorts) by categories such as Business, Sports, World, etc
+
+![Screenshot 2022-10-20 142214](https://user-images.githubusercontent.com/92965519/196905044-f6beb414-290a-4006-bfaa-3c8e7d14420f.png)
 
 ## Getting Started
 
