@@ -7,7 +7,7 @@ const Navbar = () => {
   const router = useRouter();
   console.log(router.asPath)
   return (
-    <nav className='flex justify-center gap-4 px-4 items-center  bg-white/30 dark:bg-slate-900/30 text-black dark:text-white p-4 w-full z-20 flex-wrap fixed backdrop-blur-lg'>
+    <nav className='flex justify-center gap-4 px-4 items-center  bg-white/30 dark:bg-slate-900/30 text-black dark:text-white p-4 w-full z-20 flex-wrap fixed backdrop-blur-lg font-semibold'>
 
 
       <Link href={"/"}><a className={`py-1 px-2 rounded-md ${router.asPath === "/" ? "  bg-slate-300 dark:bg-slate-600" : ""}`} rel="noopener noreferrer">World</a></Link>
