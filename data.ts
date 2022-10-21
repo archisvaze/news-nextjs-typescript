@@ -1,4 +1,4 @@
-const data = {
+const oldData = {
     "data": [
     {
     "image": "https://static.inshorts.com/inshorts/images/v1/variants/jpg/m/2022/10_oct/19_wed/img_1666155928786_290.jpg?",
@@ -228,4 +228,4 @@ const data = {
     ]
     }
 
-export {data};
+export {oldData};
