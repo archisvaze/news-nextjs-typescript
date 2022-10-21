@@ -6,20 +6,21 @@ import Navbar from '../components/Navbar'
 import { useAppDispatch, useAppSelector } from '../hooks';
 import { setLoading, isLoading } from '../slices/mySlice';
 import { useRouter } from 'next/router'
+import NewsItem from '../components/NewsItem';
 
 const Home: NextPage = () => {
 
-  // const dispatch = useAppDispatch();
+  const dispatch = useAppDispatch();
   const loading = useAppSelector(isLoading);
-  // const [data, setData] = useState({ data: [] });
+  const [data, setData] = useState({ data: [] });
   const router = useRouter()
 
   useEffect(() => {
-    // fetch(`https://inshorts-news-api.onrender.com/?lang=en&category=world`)
-    //   .then(res => res.json())
-    //   .then(data => {
-    //     setData(data);
-    //   })
+    fetch(`https://inshorts-news-api.onrender.com/?lang=en&category=world`)
+      .then(res => res.json())
+      .then(data => {
+        setData(data);
+      })
     // dispatch(setLoading(false))
     router.push("/world")
   }, [])
@@ -47,13 +48,13 @@ const Home: NextPage = () => {
       <Navbar />
 
 
-      {/* <main className=' my-28 flex flex-wrap max-w-5xl justify-center'>
+      <main className=' my-28 flex flex-wrap max-w-5xl justify-center'>
         {data.data.map((newsItem: any) => {
           return (
             <NewsItem key={newsItem.image} newsItem={newsItem} />
           )
         })}
-      </main> */}
+      </main>
 
     </div>
   )
