@@ -20,7 +20,7 @@ const Navbar = () => {
       <Link href={"/science"}>
         <a onClick={() => { dispatch(setLoading(true)) }} className={`py-1 px-2 rounded-md ${router.asPath === "/science" ? "  bg-slate-300 dark:bg-slate-600" : ""}`} rel="noopener noreferrer">Science</a></Link>
 
-      <Link href={"/technology"}><a onClick={() => { dispatch(setLoading(true)) }} className={`py-1 px-2 rounded-md ${router.asPath === "/technology" ? "  bg-slate-300 dark:bg-slate-600" : ""}`} rel="noopener noreferrer">Technology</a></Link>
+      <Link href={"/technology"}><a onClick={() => { dispatch(setLoading(true)) }} className={`py-1 px-2 rounded-md ${router.asPath === "/technology" ? "  bg-slate-300 dark:bg-slate-600" : ""}`} rel="noopener noreferrer">Tech</a></Link>
 
       <Link href={"/business"}><a onClick={() => { dispatch(setLoading(true)) }} className={`py-1 px-2 rounded-md ${router.asPath === "/business" ? "  bg-slate-300 dark:bg-slate-600" : ""}`} rel="noopener noreferrer">Business</a></Link>
 
