@@ -7,12 +7,13 @@ import { useAppDispatch, useAppSelector } from '../hooks';
 import { setLoading, isLoading } from '../slices/mySlice';
 import { useRouter } from 'next/router'
 import NewsItem from '../components/NewsItem';
+import { oldData } from '../data';
 
 const Home: NextPage = () => {
 
   const dispatch = useAppDispatch();
   const loading = useAppSelector(isLoading);
-  const [data, setData] = useState({ data: [] });
+  const [data, setData] = useState({ data: oldData.data });
   const router = useRouter()
 
   useEffect(() => {
@@ -20,9 +21,9 @@ const Home: NextPage = () => {
       .then(res => res.json())
       .then(data => {
         setData(data);
+        router.push("/world")
       })
     // dispatch(setLoading(false))
-    router.push("/world")
   }, [])
 
   return (
